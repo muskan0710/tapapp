@@ -1,0 +1,29 @@
+<html t:type="layout" title="TapApp - Employee Registration"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<h1>New Employee Registration</h1>
+<div class="row">
+    <br/><br/>
+        <t:beaneditform submitLabel="Save" object="newEmployee" class="btn btn-large">
+            <br/>
+            <p:gender><strong>Gender</strong>
+                <select t:type="select" value="newEmployee.gender" validate="required"
+                        model="literal:Female,Male,Other"/>
+            </p:gender>
+            <p:address>
+                <t:label for="address"/>
+                <t:TextArea t:id="address" value="newEmployee.address" validate="required"/>
+            </p:address>
+            <p:password>
+                <t:label for="password"/>
+                <t:passwordfield t:id="password" value="newEmployee.password" validate="required"/>
+            </p:password>
+            <p:image>
+                <t:label for = "image"/>
+                <t:textfield class="form-control" t:id="image" type="url" value="newEmployee.image" validate="required"/>
+            </p:image>
+            <br/><br/>
+        </t:beaneditform>
+    <br/><br/>
+</div>
+</html>

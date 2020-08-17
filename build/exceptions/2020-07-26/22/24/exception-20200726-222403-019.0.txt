@@ -1,0 +1,143 @@
+EXCEPTION STACK:
+
+
+  Exception: org.apache.tapestry5.ioc.internal.OperationException
+    Message: Forms require that the request method be POST and that the t:formdata query parameter have values.
+   location: classpath:com/pages/Login.tml, line 6
+      trace: Handling traditional 'action' component event request for Login:login.
+             Triggering event 'action' on Login:login
+
+  Exception: org.apache.tapestry5.runtime.ComponentEventException
+    Message: Forms require that the request method be POST and that the t:formdata query parameter have values.
+    context: org.apache.tapestry5.internal.EmptyEventContext@46afb1c9
+  eventType: action
+   location: classpath:com/pages/Login.tml, line 6
+
+  Exception: java.lang.RuntimeException
+    Message: Forms require that the request method be POST and that the t:formdata query parameter have values.
+
+  Stack trace:
+
+  - org.apache.tapestry5.corelib.components.Form.executeStoredActions(Form.java:701)
+  - org.apache.tapestry5.corelib.components.Form.onAction(Form.java:516)
+  - org.apache.tapestry5.corelib.components.Form.dispatchComponentEvent(Form.java)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1047)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1044)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementResourcesImpl.invoke(ComponentPageElementResourcesImpl.java:154)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.triggerContextEvent(ComponentPageElementImpl.java:1043)
+  - org.apache.tapestry5.internal.services.ComponentEventRequestHandlerImpl.handle(ComponentEventRequestHandlerImpl.java:73)
+  - org.apache.tapestry5.internal.services.AjaxFilter.handle(AjaxFilter.java:42)
+  - $ComponentEventRequestHandler_15a2263eef4e7.handle(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$37.handle(TapestryModule.java:2218)
+  - $ComponentEventRequestHandler_15a2263eef4e7.handle(Unknown Source)
+  - $ComponentEventRequestHandler_15a2263eef488.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handleComponentEvent(ComponentRequestHandlerTerminator.java:43)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handleComponentEvent(DeferredResponseRenderer.java:45)
+  - $ComponentRequestHandler_15a2263eef48a.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handleComponentEvent(InitializeActivePageName.java:39)
+  - $ComponentRequestHandler_15a2263eef48a.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.ProductionModeUnknownComponentFilter.handleComponentEvent(ProductionModeUnknownComponentFilter.java:50)
+  - $ComponentRequestHandler_15a2263eef48a.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$1.perform(RequestOperationTracker.java:55)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$1.perform(RequestOperationTracker.java:52)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.perform(OperationTrackerImpl.java:110)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.perform(PerThreadOperationTracker.java:84)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.perform(RegistryImpl.java:1266)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handleComponentEvent(RequestOperationTracker.java:47)
+  - $ComponentRequestHandler_15a2263eef48a.handleComponentEvent(Unknown Source)
+  - $ComponentRequestHandler_15a2263eef45b.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentEventDispatcher.dispatch(ComponentEventDispatcher.java:48)
+  - $Dispatcher_15a2263eef45d.dispatch(Unknown Source)
+  - $Dispatcher_15a2263eef453.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_15a2263eef454.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:848)
+  - $RequestHandler_15a2263eef454.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:838)
+  - $RequestHandler_15a2263eef454.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_15a2263eef454.service(Unknown Source)
+  - $RequestHandler_15a2263eef44a.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_15a2263eef44c.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_15a2263eef447.service(Unknown Source)
+  - $HttpServletRequestHandler_15a2263eef44c.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:798)
+  - $HttpServletRequestHandler_15a2263eef44c.service(Unknown Source)
+  - $HttpServletRequestHandler_15a2263eef446.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+  - org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+  - org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+  - org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+  - org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+  - org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+  - org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+  - org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+  - org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+  - org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+  - org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+  - org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+  - org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+  - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  - java.lang.Thread.run(Thread.java:748)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /TapApp
+                     method: GET
+                       path: /login.login
+                     locale: en_GB
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+            accept-encoding: gzip, deflate, br
+            accept-language: en-GB,en;q=0.9,hi-IN;q=0.8,hi;q=0.7,en-US;q=0.6
+                 connection: keep-alive
+                     cookie: JSESSIONID=00ECE316F8BE521BFCF0CC63A8EB4B1F
+                       host: localhost:8181
+             sec-fetch-dest: document
+             sec-fetch-mode: navigate
+             sec-fetch-site: none
+             sec-fetch-user: ?1
+  upgrade-insecure-requests: 1
+                 user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
+
+SYSTEM INFORMATION:
+
+Memory:
+       89,282,656 bytes free
+      397,934,592 bytes total
+      932,184,064 bytes max
+
+15 Threads:
+                                     Reference Handler WAITING, daemon, priority 10
+                                             Finalizer WAITING, daemon, priority 8
+                                     Signal Dispatcher RUNNABLE, daemon, priority 9
+                                       Attach Listener RUNNABLE, daemon
+                                                  main WAITING
+                                    Monitor Ctrl-Break RUNNABLE, daemon
+                                              Thread-3 RUNNABLE, daemon
+  ContainerBackgroundProcessor[StandardEngine[Tomcat]] TIMED_WAITING, daemon
+                              http-bio-8181-Acceptor-0 RUNNABLE, daemon
+                            http-bio-8181-AsyncTimeout TIMED_WAITING, daemon
+                                  http-bio-8181-exec-1 WAITING, daemon
+                                  http-bio-8181-exec-2 WAITING, daemon
+                                  http-bio-8181-exec-3 WAITING, daemon
+                                  http-bio-8181-exec-4 RUNNABLE, daemon
+*                                 http-bio-8181-exec-5 RUNNABLE, daemon

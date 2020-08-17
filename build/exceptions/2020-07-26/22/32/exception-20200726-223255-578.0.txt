@@ -1,0 +1,161 @@
+EXCEPTION STACK:
+
+
+         Exception: org.apache.tapestry5.ioc.internal.OperationException
+           Message: Render queue error in Expansion[PropBinding[expansion IndividualEmployee(employeeDto.firstName)]]: Property 'employeeDto' (within property expression 'employeeDto.firstName', of com.pages.IndividualEmployee@6ec81444) is null.
+          location: classpath:com/pages/IndividualEmployee.tml, line 19
+             trace: Handling page render request for page IndividualEmployee
+
+         Exception: org.apache.tapestry5.internal.services.RenderQueueException
+           Message: Render queue error in Expansion[PropBinding[expansion IndividualEmployee(employeeDto.firstName)]]: Property 'employeeDto' (within property expression 'employeeDto.firstName', of com.pages.IndividualEmployee@6ec81444) is null.
+  activeComponents: InternalComponentResources[IndividualEmployee]
+                    InternalComponentResources[IndividualEmployee:layout]
+          location: classpath:com/pages/IndividualEmployee.tml, line 19
+
+         Exception: org.apache.tapestry5.ioc.internal.util.TapestryException
+           Message: Property 'employeeDto' (within property expression 'employeeDto.firstName', of com.pages.IndividualEmployee@6ec81444) is null.
+          location: classpath:com/pages/IndividualEmployee.tml, line 19
+
+         Exception: java.lang.NullPointerException
+           Message: Property 'employeeDto' (within property expression 'employeeDto.firstName', of com.pages.IndividualEmployee@6ec81444) is null.
+
+  Stack trace:
+
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl.nullTerm(PropertyConduitSourceImpl.java:1546)
+  - $InternalPropertyConduit_15a9b68ecdf9c.navigate(Unknown Source)
+  - $InternalPropertyConduit_15a9b68ecdf9c.get(Unknown Source)
+  - org.apache.tapestry5.internal.bindings.PropBinding.get(PropBinding.java:63)
+  - org.apache.tapestry5.internal.structure.ExpansionPageElement.render(ExpansionPageElement.java:45)
+  - org.apache.tapestry5.internal.services.RenderQueueImpl.run(RenderQueueImpl.java:79)
+  - org.apache.tapestry5.internal.services.PageRenderQueueImpl.render(PageRenderQueueImpl.java:121)
+  - $PageRenderQueue_15a9b68ecdfdf.render(Unknown Source)
+  - $PageRenderQueue_15a9b68ecdfde.render(Unknown Source)
+  - org.apache.tapestry5.internal.services.MarkupRendererTerminator.renderMarkup(MarkupRendererTerminator.java:37)
+  - org.apache.tapestry5.modules.TapestryModule$29.renderMarkup(TapestryModule.java:1809)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$28.renderMarkup(TapestryModule.java:1799)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$27.renderMarkup(TapestryModule.java:1783)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$26.renderMarkup(TapestryModule.java:1767)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.JavaScriptModule$1.renderMarkup(JavaScriptModule.java:268)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$25.renderMarkup(TapestryModule.java:1750)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.javascript.AddBrowserCompatibilityStyles.renderMarkup(AddBrowserCompatibilityStyles.java:45)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.javascript.ConfigureHTMLElementFilter.renderMarkup(ConfigureHTMLElementFilter.java:45)
+  - $MarkupRenderer_15a9b68ecdfe1.renderMarkup(Unknown Source)
+  - $MarkupRenderer_15a9b68ecdfdd.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageMarkupRendererImpl.renderPageMarkup(PageMarkupRendererImpl.java:47)
+  - $PageMarkupRenderer_15a9b68ecdfdb.renderPageMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageResponseRendererImpl.renderPageResponse(PageResponseRendererImpl.java:64)
+  - $PageResponseRenderer_15a9b68ecdf5d.renderPageResponse(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderRequestHandlerImpl.handle(PageRenderRequestHandlerImpl.java:72)
+  - org.apache.tapestry5.modules.TapestryModule$34.handle(TapestryModule.java:1976)
+  - $PageRenderRequestHandler_15a9b68ecdf5f.handle(Unknown Source)
+  - $PageRenderRequestHandler_15a9b68ecdf5a.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handlePageRender(ComponentRequestHandlerTerminator.java:48)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handlePageRender(DeferredResponseRenderer.java:52)
+  - $ComponentRequestHandler_15a9b68ecdf5b.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handlePageRender(InitializeActivePageName.java:47)
+  - $ComponentRequestHandler_15a9b68ecdf5b.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.ProductionModeUnknownComponentFilter.handlePageRender(ProductionModeUnknownComponentFilter.java:62)
+  - $ComponentRequestHandler_15a9b68ecdf5b.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$2.run(RequestOperationTracker.java:73)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.run(OperationTrackerImpl.java:56)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.run(PerThreadOperationTracker.java:60)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.run(RegistryImpl.java:1254)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handlePageRender(RequestOperationTracker.java:66)
+  - $ComponentRequestHandler_15a9b68ecdf5b.handlePageRender(Unknown Source)
+  - $ComponentRequestHandler_15a9b68ecdf2b.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderDispatcher.dispatch(PageRenderDispatcher.java:55)
+  - $Dispatcher_15a9b68ecdf2d.dispatch(Unknown Source)
+  - $Dispatcher_15a9b68ecdf23.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_15a9b68ecdf24.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:848)
+  - $RequestHandler_15a9b68ecdf24.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:838)
+  - $RequestHandler_15a9b68ecdf24.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_15a9b68ecdf24.service(Unknown Source)
+  - $RequestHandler_15a9b68ecdf1a.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_15a9b68ecdf1c.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_15a9b68ecdf17.service(Unknown Source)
+  - $HttpServletRequestHandler_15a9b68ecdf1c.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:798)
+  - $HttpServletRequestHandler_15a9b68ecdf1c.service(Unknown Source)
+  - $HttpServletRequestHandler_15a9b68ecdf16.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+  - org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+  - org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+  - org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+  - org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+  - org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+  - org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+  - org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+  - org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+  - org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+  - org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+  - org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+  - org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+  - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  - java.lang.Thread.run(Thread.java:748)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /TapApp
+                     method: GET
+                       path: /individualemployee/1
+                     locale: en_GB
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+            accept-encoding: gzip, deflate, br
+            accept-language: en-GB,en;q=0.9,hi-IN;q=0.8,hi;q=0.7,en-US;q=0.6
+              cache-control: max-age=0
+                 connection: keep-alive
+                     cookie: JSESSIONID=75D63EFCE78914810F42EFC9B377FF5E
+                       host: localhost:8181
+                    referer: http://localhost:8181/TapApp/login.login
+             sec-fetch-dest: document
+             sec-fetch-mode: navigate
+             sec-fetch-site: same-origin
+             sec-fetch-user: ?1
+  upgrade-insecure-requests: 1
+                 user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
+
+SYSTEM INFORMATION:
+
+Memory:
+       88,395,280 bytes free
+      399,507,456 bytes total
+      932,184,064 bytes max
+
+13 Threads:
+                                     Reference Handler WAITING, daemon, priority 10
+                                             Finalizer WAITING, daemon, priority 8
+                                     Signal Dispatcher RUNNABLE, daemon, priority 9
+                                       Attach Listener RUNNABLE, daemon
+                                                  main WAITING
+                                    Monitor Ctrl-Break RUNNABLE, daemon
+                                              Thread-3 RUNNABLE, daemon
+  ContainerBackgroundProcessor[StandardEngine[Tomcat]] TIMED_WAITING, daemon
+                              http-bio-8181-Acceptor-0 RUNNABLE, daemon
+                            http-bio-8181-AsyncTimeout TIMED_WAITING, daemon
+                                  http-bio-8181-exec-1 WAITING, daemon
+*                                 http-bio-8181-exec-2 RUNNABLE, daemon
+                                       pool-1-thread-1 TIMED_WAITING

@@ -1,0 +1,12 @@
+<html t:type="layout" title="TapApp - Login"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<h1>Employee Login</h1>
+<t:form t:id="login">
+    <t:textfield t:id="email" placeholder="Email address"/> <br/>
+    <t:passwordfield t:id="password" placeholder="Password"/> <br/><br/>
+    <t:submit class="btn btn-large btn-primary" value="Login"/> <br/><br/>
+    <t:checkbox t:id="rememberMe"/>
+    <t:label for="rememberMe"/>
+</t:form>
+</html>
