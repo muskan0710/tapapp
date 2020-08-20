@@ -1,0 +1,57 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/slf4j-api-1.7.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tynamo-common-0.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/jandex-1.1.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-orm-4.1.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-hibernate-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/plastic-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/dbcp-6.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-spring-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry5-annotations-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-security-0.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/commons-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry5-jquery-4.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-jdbc-4.1.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/postgresql-42.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-json-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/antlr-runtime-3.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/javassist-3.18.1-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-ioc-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/shiro-web-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/shiro-core-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-hibernate-core-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/jboss-logging-3.1.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/beanmodel-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/commons-lang3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/xml-apis-1.0.b2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/spring-web-3.1.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-core-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/hibernate-core-4.3.6.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/tapestry-func-5.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/TapApp/WEB-INF/lib/slf4j-log4j12-1.7.19.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

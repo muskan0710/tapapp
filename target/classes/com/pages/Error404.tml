@@ -1,0 +1,19 @@
+<html t:type="layout" title="TapApp - Error404"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<head>
+    <title class="text-center">Error!</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="text-center">Page or resource not found!</h1>
+
+    <t:if test="! productionMode">
+        <t:renderobject object="request"/>
+    </t:if>
+</div>
+
+</body>
+</html>

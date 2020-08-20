@@ -49,4 +49,13 @@ public class EmployeeImpl implements EmployeeService {
         Employee employee = employeeDao.findById(id);
         employee.setAge(age);
     }
+
+    @Transactional
+    public void promoteEmployee(Long id) {
+        Employee employee = employeeDao.findById(id);
+        if(employee!=null){
+            employee.setDesignation("Manager");
+            employeeDao.save(employee);
+        }
+    }
 }

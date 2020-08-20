@@ -1,5 +1,7 @@
 package com.pages;
 
+import com.services.EmployeeService;
+import com.services.ValidationService;
 import com.services.serviceImpl.EmployeeImpl;
 import com.services.serviceImpl.ValidationImpl;
 import org.apache.tapestry5.alerts.AlertManager;
@@ -36,10 +38,10 @@ public class EditEmployee {
     private long empId;
 
     @Inject
-    private ValidationImpl validation;
+    private ValidationService validation;
 
     @Inject
-    private EmployeeImpl employeeImpl;
+    private EmployeeService employeeService;
 
     public void set(Long empId) {
         this.empId = empId;
@@ -52,6 +54,7 @@ public class EditEmployee {
     Long onPassivate() {
         return empId;
     }
+
     void onValidateFromEdit() {
         if(age==null || age>65 && age<18) {
             edit.recordError(ageField, "Invalid!");
@@ -59,7 +62,7 @@ public class EditEmployee {
     }
 
     Object onSuccessFromEdit() {
-        employeeImpl.update(empId,age);
+        employeeService.update(empId,age);
         logger.info("Updation successful!");
         employee.set(empId);
         return employee;

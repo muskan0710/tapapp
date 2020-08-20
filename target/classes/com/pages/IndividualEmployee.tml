@@ -1,0 +1,21 @@
+<html t:type="layout" title="TapApp - Welcome ${employee.firstName} "
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<h1 class="text-center">Hi ${employee.firstName}!</h1>
+<div class="text-center">
+    <div class="row">
+        <p>
+            <strong>First Name:</strong><br/> ${employee.firstName} <br/><br/>
+            <strong>Last Name:</strong><br/> ${employee.lastName} <br/><br/>
+            <strong>Date Of Birth:</strong><br/> ${employee.dob} <br/><br/>
+            <strong>Age:</strong><br/> ${employee.age} <br/><br/>
+            <strong>Address:</strong><br/> ${employee.address} <br/><br/>
+            <strong>Designation:</strong><br/> ${employee.designation} <br/><br/>
+            <strong>Email:</strong><br/> ${employee.email} <br/><br/>
+        </p>
+    </div>
+    <t:pagelink page="EditEmployee" class="btn btn-success" context="employee.id" href="#">Edit</t:pagelink>
+    <br/><br/>
+    <t:pagelink page="EmployeeList" class="btn btn-success" context="employee.id" href="#">Show Employees</t:pagelink>
+</div>
+</html>

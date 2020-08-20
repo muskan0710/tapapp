@@ -1,12 +1,12 @@
 package com.pages;
 
 import com.dto.NewEmployeeDto;
+import com.services.EmployeeService;
 import com.services.serviceImpl.EmployeeImpl;
 
 import org.apache.tapestry5.alerts.AlertManager;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.ioc.annotations.Inject;
-import org.apache.tapestry5.services.javascript.JavaScriptSupport;
 import org.slf4j.Logger;
 
 
@@ -18,7 +18,7 @@ public class NewEmployee {
     private AlertManager alertManager;
 
     @Inject
-    private EmployeeImpl employeeImpl;
+    private EmployeeService employeeService;
 
     @Property
     NewEmployeeDto newEmployee;
@@ -27,13 +27,14 @@ public class NewEmployee {
     private int age;
 
         Object onSuccess() {
-        employeeImpl.save(newEmployee);
+        employeeService.save(newEmployee);
         logger.info("Registration successful.");
         alertManager.success("Thanks for registering, Welcome!");
         return Login.class;
     }
+
     Object onFailure() {
-        employeeImpl.save(newEmployee);
+        employeeService.save(newEmployee);
         logger.info("Registration unsuccessful.");
         alertManager.success("Couldn't register!");
         return Error404.class;
