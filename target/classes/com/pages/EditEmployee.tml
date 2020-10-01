@@ -11,10 +11,10 @@
                         Enter a valid age
                     </span>
                 </label>
-                <t:textfield t:id="age" type="number" validate="required"/>
+                <t:textfield t:id="age" type="number" onkeyup="agevalidate()" validate="required"/>
             </div><br/><br/>
             <div class="form-group">
-                <t:submit class="btn btn-large btn-success" id="update" value="Update"/>
+                <button class="btn btn-large btn-success" id="update">Update</button>
             </div>
         </t:form>
     </div>

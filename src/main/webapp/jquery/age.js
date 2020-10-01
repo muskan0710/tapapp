@@ -1,13 +1,13 @@
-$(document).ready(function() {
+function agevalidate(){
+let age = document.getElementById('age').value;
+let update = document.getElementById('update');
+let popover = document.getElementById('popover-age-top');
 
-    $('#age').keyup(function() {
-        let age = $('#age').val();
-        if (age >= 18 && age <= 65) {
-            $('#update').attr('disabled', true);
-            $('#popover-age-top').addClass('hide');
+if (age >= 18 && age <= 65) {
+            update.disabled=false;
+            popover.classList.add('hide');
         } else {
-            $('#popover-age-top').removeClass('hide');
+            update.disabled=true;
+            popover.classList.remove('hide');
         }
-    });
-
-});
+}

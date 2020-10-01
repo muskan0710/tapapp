@@ -1,0 +1,33 @@
+<html t:type="layout" title="TapApp - Employee List"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<div style="position: absolute; top: 20px; right: 50px; width: 100px; text-align:right;">
+    <t:pagelink page="Login">[CLOSE]</t:pagelink>
+    <br/>
+</div>
+<div class="row">
+    <h2 class="text-center">Employee Book</h2>
+    <hr/>
+    <t:grid source="employees" row="employee">
+        <p:idCell>
+            <t:pagelink page="IndividualEmployee" context="employee.id">${employee.id}</t:pagelink>
+        </p:idCell>
+        <p:designationCell>
+            ${employee.designation}
+            <t:eventlink t:event="promote" t:context="employee.id">[PROMOTE]</t:eventlink>
+        </p:designationCell>
+        <p:imageCell>
+            <a onclick="showModel('${employee.id}','${employee.image}')">[IMAGE]</a>
+        </p:imageCell>
+    </t:grid>
+    <!--  <t:security.hasRole role="admin">
+          <t:actionlink t:id="Edit">Edit Employee</t:actionlink>
+      </t:security.hasRole> -->
+    <div t:type="loop" t:source="employees" t:value="employee">
+        <div id="img-model${employee.id}" class="modal">
+            <span class="close" id="close${employee.id}">&times;</span>
+            <img class="modal-content" id="img-count${employee.id}"/>
+        </div>
+    </div>
+</div>
+</html>

@@ -1,24 +1,24 @@
-
-.sourcecodedisplay .box {
-    margin: 10px 0px 0px 0px;
-    background: #adffd6;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+.female {
+  background-color: pink;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
 }
-
-.sourcecodedisplay .source pre {
-    font-size: 11px;
-    font-weight: normal;
+.male {
+  background-color: skyblue;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
 }
-
-.sourcecodedisplay .not-found {
-    margin: 10px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    text-align: left;
-    color: red;
+.other {
+  background-color: coral;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
 }

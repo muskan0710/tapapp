@@ -1,0 +1,18 @@
+<html t:type="layout" title="TapApp - Home"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<body class="container">
+<h1 class="text-center">Welcome to TapApp</h1>
+<div class="container">
+    <div class="col-sm-6">
+        <h3>Are you an existing employee of TapApp?</h3>
+        <t:pagelink page="Login">Login</t:pagelink>
+    </div>
+    <div class="col-sm-6">
+        <h3>Are you a new employee of TapApp?</h3>
+        <t:pagelink page="NewEmployee">Sign In</t:pagelink>
+    </div>
+</div>
+</body>
+</html>
+

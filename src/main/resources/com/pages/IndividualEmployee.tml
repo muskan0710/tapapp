@@ -2,6 +2,7 @@
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
       xmlns:p="tapestry:parameter">
 <h1 class="text-center">Hi ${employee.firstName}!</h1>
+<div t:id="banner" employee="employee"/>
 <div class="text-center">
     <div class="row">
         <p>

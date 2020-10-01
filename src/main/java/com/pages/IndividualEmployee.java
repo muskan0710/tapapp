@@ -1,21 +1,26 @@
 package com.pages;
 
+import com.components.WishBanner;
 import com.dto.EmployeeDto;
 import com.model.Employee;
 import com.services.EmployeeService;
-import com.services.serviceImpl.EmployeeImpl;
+import org.apache.tapestry5.annotations.Component;
+import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.services.Request;
 import org.apache.tapestry5.services.ajax.AjaxResponseRenderer;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
+@Import(stylesheet = "context:mybootstrap/css/birthday.css")
 public class IndividualEmployee {
 
     @Property
     private long empId;
+
+    @Component
+    private WishBanner banner;
 
     @Inject
     private EmployeeService employeeService;

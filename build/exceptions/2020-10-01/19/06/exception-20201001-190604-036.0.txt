@@ -1,0 +1,175 @@
+EXCEPTION STACK:
+
+
+         Exception: org.apache.tapestry5.ioc.internal.OperationException
+           Message: Render queue error in PostRenderCleanup[IndividualEmployee:banner]: Component IndividualEmployee:banner has rendered unbalanced elements; either it has started an element with MarkupWriter.element() and not followed up with MarkupWriter.end(), or it has invoked MarkupWriter.end() without first invoking MarkupWriter.element().
+          location: classpath:com/pages/IndividualEmployee.tml, line 5
+             trace: Handling page render request for page IndividualEmployee
+
+         Exception: org.apache.tapestry5.internal.services.RenderQueueException
+           Message: Render queue error in PostRenderCleanup[IndividualEmployee:banner]: Component IndividualEmployee:banner has rendered unbalanced elements; either it has started an element with MarkupWriter.element() and not followed up with MarkupWriter.end(), or it has invoked MarkupWriter.end() without first invoking MarkupWriter.element().
+  activeComponents: InternalComponentResources[IndividualEmployee]
+                    InternalComponentResources[IndividualEmployee:layout]
+                    InternalComponentResources[IndividualEmployee:banner]
+          location: classpath:com/pages/IndividualEmployee.tml, line 5
+
+         Exception: org.apache.tapestry5.ioc.internal.util.TapestryException
+           Message: Component IndividualEmployee:banner has rendered unbalanced elements; either it has started an element with MarkupWriter.element() and not followed up with MarkupWriter.end(), or it has invoked MarkupWriter.end() without first invoking MarkupWriter.element().
+          location: classpath:com/pages/IndividualEmployee.tml, line 5
+
+  Stack trace:
+
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$PostRenderCleanupPhase.render(ComponentPageElementImpl.java:441)
+  - org.apache.tapestry5.internal.services.RenderQueueImpl.run(RenderQueueImpl.java:79)
+  - org.apache.tapestry5.internal.services.PageRenderQueueImpl.render(PageRenderQueueImpl.java:121)
+  - $PageRenderQueue_20254d5ea283.render(Unknown Source)
+  - $PageRenderQueue_20254d5ea282.render(Unknown Source)
+  - org.apache.tapestry5.internal.services.MarkupRendererTerminator.renderMarkup(MarkupRendererTerminator.java:37)
+  - org.got5.tapestry5.jquery.services.js.JSModule$1.renderMarkup(JSModule.java:40)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$29.renderMarkup(TapestryModule.java:1809)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$28.renderMarkup(TapestryModule.java:1799)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$27.renderMarkup(TapestryModule.java:1783)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$26.renderMarkup(TapestryModule.java:1767)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.javascript.AddBrowserCompatibilityStyles.renderMarkup(AddBrowserCompatibilityStyles.java:45)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.javascript.ConfigureHTMLElementFilter.renderMarkup(ConfigureHTMLElementFilter.java:45)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.JavaScriptModule$1.renderMarkup(JavaScriptModule.java:268)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$25.renderMarkup(TapestryModule.java:1750)
+  - $MarkupRenderer_20254d5ea286.renderMarkup(Unknown Source)
+  - $MarkupRenderer_20254d5ea281.renderMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageMarkupRendererImpl.renderPageMarkup(PageMarkupRendererImpl.java:47)
+  - $PageMarkupRenderer_20254d5ea27f.renderPageMarkup(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageResponseRendererImpl.renderPageResponse(PageResponseRendererImpl.java:64)
+  - $PageResponseRenderer_20254d5ea240.renderPageResponse(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderRequestHandlerImpl.handle(PageRenderRequestHandlerImpl.java:72)
+  - org.apache.tapestry5.modules.TapestryModule$34.handle(TapestryModule.java:1976)
+  - $PageRenderRequestHandler_20254d5ea242.handle(Unknown Source)
+  - $PageRenderRequestHandler_20254d5ea23b.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handlePageRender(ComponentRequestHandlerTerminator.java:48)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handlePageRender(DeferredResponseRenderer.java:52)
+  - $ComponentRequestHandler_20254d5ea23c.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handlePageRender(InitializeActivePageName.java:47)
+  - $ComponentRequestHandler_20254d5ea23c.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.ProductionModeUnknownComponentFilter.handlePageRender(ProductionModeUnknownComponentFilter.java:62)
+  - $ComponentRequestHandler_20254d5ea23c.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$2.run(RequestOperationTracker.java:73)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.run(OperationTrackerImpl.java:56)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.run(PerThreadOperationTracker.java:60)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.run(RegistryImpl.java:1254)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handlePageRender(RequestOperationTracker.java:66)
+  - $ComponentRequestHandler_20254d5ea23c.handlePageRender(Unknown Source)
+  - org.tynamo.security.SecurityComponentRequestFilter.handlePageRender(SecurityComponentRequestFilter.java:49)
+  - $ComponentRequestFilter_20254d5ea239.handlePageRender(Unknown Source)
+  - $ComponentRequestHandler_20254d5ea23c.handlePageRender(Unknown Source)
+  - $ComponentRequestHandler_20254d5ea205.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderDispatcher.dispatch(PageRenderDispatcher.java:55)
+  - $Dispatcher_20254d5ea208.dispatch(Unknown Source)
+  - $Dispatcher_20254d5ea1fd.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_20254d5ea1fe.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:848)
+  - $RequestHandler_20254d5ea1fe.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:838)
+  - $RequestHandler_20254d5ea1fe.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_20254d5ea1fe.service(Unknown Source)
+  - $RequestHandler_20254d5ea1ee.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_20254d5ea1f0.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_20254d5ea1ea.service(Unknown Source)
+  - $HttpServletRequestHandler_20254d5ea1f0.service(Unknown Source)
+  - org.tynamo.security.services.impl.SecurityConfiguration.service(SecurityConfiguration.java:50)
+  - $HttpServletRequestFilter_20254d5ea1ed.service(Unknown Source)
+  - $HttpServletRequestHandler_20254d5ea1f0.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:798)
+  - $HttpServletRequestHandler_20254d5ea1f0.service(Unknown Source)
+  - $HttpServletRequestHandler_20254d5ea1e9.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+  - org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+  - org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+  - org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+  - org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+  - org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+  - org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+  - org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+  - org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+  - org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+  - org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+  - org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+  - org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+  - org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+  - org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+  - org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+  - org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+  - org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+  - org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+  - org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+  - org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+  - org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+  - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  - java.lang.Thread.run(Thread.java:748)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /TapApp
+                      flags: requestedSessionIdValid
+                     method: GET
+                       path: /individualemployee/4
+                     locale: en_US
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+            accept-encoding: gzip, deflate, br
+            accept-language: en-US,en;q=0.9
+              cache-control: max-age=0
+                 connection: keep-alive
+                     cookie: JSESSIONID=e636bc37-67b4-48cf-b3ce-5589e378f015
+                       host: localhost:8080
+                    referer: http://localhost:8080/TapApp/login
+             sec-fetch-dest: document
+             sec-fetch-mode: navigate
+             sec-fetch-site: same-origin
+             sec-fetch-user: ?1
+  upgrade-insecure-requests: 1
+                 user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+
+SYSTEM INFORMATION:
+
+Memory:
+      296,554,528 bytes free
+      507,510,784 bytes total
+    3,791,650,816 bytes max
+
+15 Threads:
+                                     Reference Handler WAITING, daemon, priority 10
+                                             Finalizer WAITING, daemon, priority 8
+                                     Signal Dispatcher RUNNABLE, daemon, priority 9
+                                       Attach Listener RUNNABLE, daemon
+                                                  main WAITING
+                                    Tomcat-startStop-1 TIMED_WAITING, daemon
+                                 localhost-startStop-1 TIMED_WAITING, daemon
+                                              Thread-3 RUNNABLE, daemon
+  ContainerBackgroundProcessor[StandardEngine[Tomcat]] TIMED_WAITING, daemon
+                              http-bio-8080-Acceptor-0 RUNNABLE, daemon
+                            http-bio-8080-AsyncTimeout TIMED_WAITING, daemon
+*                                 http-bio-8080-exec-1 RUNNABLE, daemon
+                                  http-bio-8080-exec-2 RUNNABLE, daemon
+                                              Thread-5 TIMED_WAITING, daemon
+                                       pool-1-thread-1 TIMED_WAITING
