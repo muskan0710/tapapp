@@ -1,28 +1,19 @@
 package com.pages;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import com.dto.EmployeeDto;
+import com.model.Employee;
 import com.services.EmployeeService;
-import com.services.serviceImpl.EmployeeImpl;
-
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.apache.shiro.authz.annotation.RequiresRoles;
-import org.apache.shiro.config.IniSecurityManagerFactory;
-import org.apache.shiro.mgt.SecurityManager;
-import org.apache.shiro.subject.Subject;
-import org.apache.shiro.util.Factory;
 import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.InjectComponent;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.corelib.components.Zone;
 import org.apache.tapestry5.ioc.annotations.Inject;
-import org.apache.tapestry5.services.Request;
 import org.apache.tapestry5.services.ajax.AjaxResponseRenderer;
 
-@Import(stylesheet = "context:mybootstrap/css/popup.css",library = {"context:jquery/popup.js"})
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Import(stylesheet = "context:mybootstrap/css/popup.css", library = {"context:jquery/popup.js"})
 
 public class EmployeeList {
 
@@ -32,15 +23,25 @@ public class EmployeeList {
     @Property
     private EmployeeDto employee;
 
+    @Property
+    private String keyword;
+
+    @InjectComponent
+    private Zone empZone;
+
     @Inject
     private EmployeeService employeeService;
 
+    @Inject
+    private AjaxResponseRenderer ajaxResponseRenderer;
+
     void setupRender() {
-        employees = getEmployeeList();
+        employees = getEmployeeList(employeeService.getEmployeeBook());
+        ajaxResponseRenderer.addRender(empZone);
     }
 
-    public List<EmployeeDto> getEmployeeList() {
-        return employeeService.getEmployeeBook()
+    private List<EmployeeDto> getEmployeeList(List<Employee> empList) {
+        return empList
                 .stream()
                 .map(i -> new EmployeeDto(i.getId(), i.getFirstName(), i.getLastName(), i.getDob(), i.getGender(),
                         i.getAge(), i.getAddress(), i.getDesignation(), i.getEmail(), i.getImage()))
@@ -50,6 +51,17 @@ public class EmployeeList {
     void onPromote(Long id) {
         employeeService.promoteEmployee(id);
     }
+
+    void onRefreshZone() {
+        List<Employee> emp = employeeService.getEmployeeBook();
+        ajaxResponseRenderer.addRender(empZone);
+    }
+
+    void onSuccessFromSearchEmployee() {
+        employees = getEmployeeList(employeeService.searchEmployee(keyword));
+        ajaxResponseRenderer.addRender(empZone);
+    }
+
 }
 
 

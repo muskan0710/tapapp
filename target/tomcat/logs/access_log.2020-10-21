@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/ HTTP/1.1" 200 822 http-bio-8080-exec-1 2778
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/meta/zff739fb3/tapestry5/tapestry.css HTTP/1.1" 200 818 http-bio-8080-exec-2 21
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/meta/z38caf5f4/tapestry5/bootstrap/css/bootstrap.css HTTP/1.1" 200 21552 http-bio-8080-exec-3 21
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/meta/ze8a5779c/tapestry5/exception-frame.css HTTP/1.1" 200 256 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/meta/zceffa0e4/tapestry5/tapestry-console.css HTTP/1.1" 200 331 http-bio-8080-exec-5 13
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/tapestry-jquery/z6f231684/vendor/ui/themes/smoothness/jquery-ui.css HTTP/1.1" 200 8260 http-bio-8080-exec-7 22
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/meta/zd00fb059/tapestry5/tree.css HTTP/1.1" 200 868 http-bio-8080-exec-6 4
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/stack/za5a25e4f/en/core.js HTTP/1.1" 200 173153 http-bio-8080-exec-8 7
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /TapApp/assets/meta/313de0c7/tapestry5/pageloader-mask.gif HTTP/1.1" 200 13270 http-bio-8080-exec-8 2
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:20 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:28 +0530] "GET /TapApp/login HTTP/1.1" 200 1393 http-bio-8080-exec-8 2032
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:39 +0530] "POST /TapApp/login.login HTTP/1.1" 302 - http-bio-8080-exec-8 1832
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:39 +0530] "GET /TapApp/individualemployee/1 HTTP/1.1" 200 959 http-bio-8080-exec-8 85
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:39 +0530] "GET /TapApp/assets/ctx/z247943ea/mybootstrap/css/birthday.css HTTP/1.1" 200 150 http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:50 +0530] "GET /TapApp/employeelist/1 HTTP/1.1" 500 993 http-bio-8080-exec-8 1084
+0:0:0:0:0:0:0:1 - - [21/Oct/2020:20:15:50 +0530] "GET /TapApp/assets/meta/core/z1cb2483c/ExceptionReport.css HTTP/1.1" 200 165 http-bio-8080-exec-7 4

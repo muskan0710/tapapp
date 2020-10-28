@@ -12,4 +12,6 @@ public interface EmployeeDao {
     List<Employee> findEmployeeBook();
 
     void save(Employee employee);
+
+    List<Employee> searchEmployee(String keyword);
 }

@@ -5,9 +5,20 @@
     <t:pagelink page="Login">[CLOSE]</t:pagelink>
     <br/>
 </div>
+<div class="row mt-5">
+    Keyword
+    <br/>
+    <t:form t:id="searchEmployee" t:zone="empZone">
+        <div class="input-group shadow-sm">
+            <t:textfield type="search" class="form-control" placeholder="Search by Id or Name" value="keyword" /> <br/><br/>
+            <t:submit class="btn btn-large btn-primary" value="Search"/> <br/><br/>
+        </div>
+    </t:form>
+</div>
 <div class="row">
     <h2 class="text-center">Employee Book</h2>
     <hr/>
+    <t:zone t:id="empZone" id="empZone">
     <t:grid source="employees" row="employee">
         <p:idCell>
             <t:pagelink page="IndividualEmployee" context="employee.id">${employee.id}</t:pagelink>
@@ -29,5 +40,6 @@
             <img class="modal-content" id="img-count${employee.id}"/>
         </div>
     </div>
+    </t:zone>
 </div>
 </html>

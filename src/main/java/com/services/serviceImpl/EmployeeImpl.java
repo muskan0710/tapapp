@@ -58,4 +58,11 @@ public class EmployeeImpl implements EmployeeService {
             employeeDao.save(employee);
         }
     }
+
+    @Transactional
+    @Override
+    public List<Employee> searchEmployee(String keyword) {
+        return employeeDao.searchEmployee(keyword);
+    }
+
 }

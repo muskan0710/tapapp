@@ -21,4 +21,6 @@ public interface EmployeeService {
 
     public void promoteEmployee(Long id);
 
+    public List<Employee> searchEmployee(String keyword);
+
 }
